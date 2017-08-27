@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ANG RSVP</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body ng-app="myApp" ng-controller="myController">
+    <div id="container">
+      <div class="topbox">
+          <h3>RSVP TO THE EVENT</h3>
+      </div>
+      <div class="middleBox">
+        <div class="inputOne">
+            <p>First Name:</p>
+            <p><input type="text" placeholder="First Name:"ng-model="item.fName"></p>
+
+            <p>Last Name:</p>
+            <p><input type="text" placeholder="Last Name:"ng-model="item.lName"></p>
+
+            <p>Email:</p>
+            <p><input type="email" placeholder="Email:"ng-model="item.email"></p>
+        </div>
+        <div class="inputTwo">
+            <p># of People:</p>
+            <p><input class="people"type="number" placeholder="# of people:"ng-model="item.number"|number></p>
+            <p class="price">Price: $ 5.00 / ticket</p>
+
+        </div>
+        <div class=totalDiv>
+              <button type="submit" ng-click="addItem(item.fName,item.lName, item.email,item.number, item.total|currency)">SUBMIT</button>
+            <p class="totalOutput"><span class=totalText>Total:</span> ${{item.number * 5|currency}}</p>
+        </div>
+
+      </div>
+      <div class="bottomBox">
+        <p class="input3">{{item.fName}} {{item.lName}}, Reserved for: {{item.number + 1}}</p>
+    </div>
+    <div class="feedBox">
+      <div class="lowHeading">
+        <h3>GUESTS</h3>
+      </div>
+      <div class="listItem">
+        <div class="listBox" ng-repeat="fedItem in ticketBox track by $index">
+          <p>{{fedItem.fName}} {{fedItem.lName}}
+              {{fedItem.email}}{{today|date:"MMM, d, y, h:mm:ss a"}}</br>
+
+          </p>
+          <p>{{fedItem.number}} ticket{{fedItem.extra}} : {{fedItem.number * 5|currency}}  </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script src="lib/angular.min.js" charset="utf-8"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/controller.js"></script> -->
+  </body>
+</html>

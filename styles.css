@@ -1,0 +1,107 @@
+#container {
+  border: 2px solid orange;
+  width: 750px;
+  height: 500px;
+  margin: 0 auto;
+}
+body {
+  /*background: url('black.jpg');*/
+  background: -webkit-linear-gradient(left, #6375A7, #95A3CA, #ccc);
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+}
+.topBox {
+  border: 2px solid gold;
+  width: 350px;
+  height: 350px;
+  float: left;
+}
+.middleBox {
+  border: 2px solid red;
+  width: 600px;
+  height: 350px;
+  margin: 0 auto;
+}
+.inputOne {
+ border: 2px solid green;
+ width: 320px;
+ height: 250px;
+ float: left;
+ margin-left: 15px;
+}
+.inputTwo {
+  border: 2px solid pink;
+  width: 250px;
+  height: 250px;
+  float: right;
+  /*margin-left: 15px;*/
+}
+.feedBox {
+  border: 2px solid grey;
+  width: 500px;
+  height: 400px;
+  margin: 50px auto;
+}
+input {
+  font-size: 17px;
+  margin-top: -10px;
+}
+button {
+  font-size: 20px;
+  color: orange;
+  background: #000;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 310px;
+  margin-top: 15px;
+}
+button:hover {
+  color: #333;
+  border: 1px solid #000;
+  background: orange;
+}
+.listItem {
+  border: 2px solid green;
+  width: 500px;
+  height: 360px;
+}
+.input3 {
+  text-align: center;
+}
+.totalOutput {
+  float: right;
+  margin-right: 40px;
+  width: 130px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+h3 {
+  text-align: center;
+}
+.price {
+  float: right;
+  margin-right: 40px;
+  width: 130px;
+  height: 20px;
+  border: 1px solid #ccc;
+  padding:5px;
+  background: #fff;
+}
+.people {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+
+}
+.totalDiv {
+  border: 1px solid #ccc;
+  height: 80px;
+  width: 580px;
+  margin-top: 260px;
+  margin-left: 10px;
+
+}
+.totalText {
+  margin-left: 5px;
+}
