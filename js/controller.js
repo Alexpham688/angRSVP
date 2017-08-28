@@ -12,7 +12,7 @@ app.controller("myController", function($scope) {
     } else if (lName === "") {
         alert("Enter Last Name");
 
-    } else if (email !== "") {
+    } else if (email === "") {
         alert("Enter Email");
         return true;
 
