@@ -42,11 +42,10 @@
       </div>
       <div class="listItem">
         <div class="listBox" ng-repeat="fedItem in ticketBox track by $index">
-          <p>{{fedItem.fName}} {{fedItem.lName}}
-              {{fedItem.email}}{{today|date:"MMM, d, y, h:mm:ss a"}}</br>
-
+          <p class="fedOutput">{{today|date:"MMM, d, y, h:mm:ss a"}}</br>
+            {{fedItem.fName}} {{fedItem.lName}}
+                {{fedItem.email}}{{fedItem.number}} ticket{{fedItem.extra}} : {{fedItem.number * 5|currency}}
           </p>
-          <p>{{fedItem.number}} ticket{{fedItem.extra}} : {{fedItem.number * 5|currency}}  </p>
         </div>
       </div>
     </div>
