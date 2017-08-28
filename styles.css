@@ -5,10 +5,8 @@
   margin: 0 auto;
 }
 body {
-  /*background: url('black.jpg');*/
   background: -webkit-linear-gradient(left, #6375A7, #95A3CA, #ccc);
   background-size: cover;
-  /*background-repeat: no-repeat;*/
 }
 .topBox {
   border: 2px solid gold;
@@ -17,30 +15,27 @@ body {
   float: left;
 }
 .middleBox {
-  border: 2px solid red;
+  border: 2px solid grey;
   width: 600px;
   height: 350px;
   margin: 0 auto;
 }
 .inputOne {
- border: 2px solid green;
  width: 320px;
  height: 250px;
  float: left;
  margin-left: 15px;
 }
 .inputTwo {
-  border: 2px solid pink;
   width: 250px;
   height: 250px;
   float: right;
-  /*margin-left: 15px;*/
 }
 .feedBox {
   border: 2px solid grey;
   width: 500px;
   height: 400px;
-  margin: 50px auto;
+  margin: 60px auto;
 }
 input {
   font-size: 17px;
@@ -61,7 +56,6 @@ button:hover {
   background: orange;
 }
 .listItem {
-  border: 2px solid green;
   width: 500px;
   height: 360px;
 }
@@ -89,10 +83,11 @@ h3 {
   background: #fff;
 }
 .people {
-  width: 100px;
+  width: 50px;
   height: 30px;
   border: 1px solid #ccc;
-
+  text-align: center;
+  margin-left: 80px;
 }
 .totalDiv {
   border: 1px solid #ccc;
@@ -104,4 +99,7 @@ h3 {
 }
 .totalText {
   margin-left: 5px;
+}
+.peopleNumber {
+  margin-left: 80px;
 }
