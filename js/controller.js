@@ -20,7 +20,7 @@ app.controller("myController", function($scope, $localStorage) {
         alert("Enter Email");
         return true;
     // if number is higher than 1 make plural
-    } else if(number > 1) {
+    } if(number > 1) {
         fedItem.extra = "s";
 
     } else {

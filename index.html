@@ -11,9 +11,10 @@
           <h3>RSVP TO THE EVENT</h3>
       </div>
       <div class="middleBox">
-        <div class="inputOne">
+        <div class="inputOne" name="theForm">
+          <span id="hint" class="hint">
             <p>First Name:</p>
-            <p><input type="text" placeholder="First Name:"ng-model="item.fName"></p>
+            <p><input id="firstName"type="text" placeholder="First Name:"ng-model="item.fName"></p>
 
             <p>Last Name:</p>
             <p><input type="text" placeholder="Last Name:"ng-model="item.lName"></p>
@@ -45,7 +46,7 @@
         <div class="listBox" ng-repeat="fedItem in ticketBox track by $index">
           <p class="fedOutput">{{today|date:"MMM, d, y, h:mm:ss a"}}</br>
             {{fedItem.fName}} {{fedItem.lName}}
-                {{fedItem.email}}{{fedItem.number}} ticket{{fedItem.extra}} : {{fedItem.number * 5|currency }}
+              {{fedItem.number}} ticket{{fedItem.extra}} : {{fedItem.number * 5|currency }}
                 {{fedItem.email}}
           </p>
         </div>
